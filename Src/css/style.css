@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    padding: .8rem;
+    
 }
 
 .container-left{
@@ -17,7 +17,8 @@
     margin-left: 1rem;
 }
 .navbar-container .container-left .logo{
-    width: 100px;
+    width: 120px;
+    padding-bottom: .8rem;
 }
 
 .btn:first-child{
