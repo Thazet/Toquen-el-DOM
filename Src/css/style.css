@@ -41,3 +41,31 @@
 .container-right{
     margin-right: 1rem;
 }
+
+
+footer {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+   gap: 6%;
+    background-color: var(--darkblue);
+    color: white; 
+    padding: 1%; 
+    margin-top: auto; 
+    
+}
+
+.Address ,
+.contact  {
+    margin: 0 10px; 
+    display:flex;
+    flex-direction: row;
+   
+}
+
+   .Address i,
+    .contact i {
+        color: var(--yellow); /* Asegúrate de usar var() para acceder a la variable */
+        margin-right: 8px;
+    }
+    
