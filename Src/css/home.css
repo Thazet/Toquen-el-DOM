@@ -1,0 +1,18 @@
+.home-profiles{
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-profile{
+    display: flex;
+    justify-content: center;
+}
