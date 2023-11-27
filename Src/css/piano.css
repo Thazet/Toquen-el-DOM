@@ -76,6 +76,10 @@
     border-radius: 10px;
     transition: background-color 0.05s ease, box-shadow 0.05s ease;
 }
+.key .white-key:active {
+    background: var(--pink); 
+    box-shadow: 0px 0px 0px rgba(32, 32, 32, 0.2); 
+}
 
 .key > span {
     display: flex;
@@ -107,6 +111,11 @@
     right: -40%;
     width: 45px;
     z-index: 10;
+}
+
+.key .black-key:active {
+    background: var(--yellow); 
+    box-shadow: 0px 0px 0px rgba(32, 32, 32, 0.2); 
 }
 
 .piano-wrapper p{
