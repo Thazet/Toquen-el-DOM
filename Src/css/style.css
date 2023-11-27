@@ -7,7 +7,6 @@
     align-content: center;
     
 }
-
 .container-left{
     width: 50%;
     display: flex;
@@ -20,7 +19,6 @@
     width: 120px;
     padding-bottom: .8rem;
 }
-
 .btn:first-child{
     text-decoration: none;
     background-color: var(--pink);
@@ -30,7 +28,6 @@
     margin: 1rem;
     font-family: 'Montserrat', sans-serif;
 }
-
 .btn:nth-child(2){
     text-decoration: none;
     background-color: var(--pink);
@@ -57,9 +54,10 @@ footer {
     color: white; 
     padding: 1%; 
     margin-top: auto; 
-    position: absolute;
+    position: fixed;
     bottom: 0;
     gap: 6%;
+    flex: 1;
 
     
 }
@@ -69,12 +67,10 @@ footer {
     margin: 0 10px; 
     display:flex;
     flex-direction: row;
-   
 }
 
    .Address i,
     .contact i {
         color: var(--yellow);
         margin-right: 8px;
-    }
-    
+    } 
