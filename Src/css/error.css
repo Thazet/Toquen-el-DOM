@@ -1,13 +1,11 @@
 
-main {
+.constuctionError {
     display: flex;
     flex-direction: column;
     align-items:first center;
     justify-content:space-around; 
     margin-top: 3%;
     gap: 20px;
-   
-   
 }
 
 .Construcción-icon {
