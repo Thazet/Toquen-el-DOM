@@ -1,0 +1,26 @@
+
+.constuctionError {
+    display: flex;
+    flex-direction: column;
+    align-items:first center;
+    justify-content:space-around; 
+    margin-top: 3%;
+    gap: 20px;
+}
+
+.Construcción-icon {
+    display: flex;
+    align-items: center; 
+    color: var(--pink);
+
+}
+
+.Construcción-icon img {
+    margin-right: 10px; 
+}
+
+.Texto-Construcción{
+    text-align: center;
+    margin-bottom: 6%;
+ width: 60%;
+}

@@ -5,7 +5,8 @@
     justify-content: center;
     text-align: center;
     padding-top: 2rem;
-    gap: 2rem;    
+    gap: 2rem; 
+    padding-bottom: 3rem;   
 }
 
 .home-profiles h3, .sec-intruments h3{
@@ -67,12 +68,62 @@
     align-items: center;
     padding: 3rem;
     gap: 1.5rem;
-}
 
+}
+.option-container img{
+    width: 100%;
+}
 .option-container p{
     font-size: 22px;
 }
 
+    
+
+.containerEscuela {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 40px;
+gap: 2rem;
+background-color:lightblue
+}
+
+.imageContainer {
+flex: 1;
+max-width: 100%;
+height: auto;
+display: block;
+margin-left: 20px;
+}git
+
+.textContainer {
+ display: flex; 
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 1rem;
+ padding: 0 20px; 
+}
+
+.textContainer h3 {
+color: var(--darkblue);
+font-size: 24px;
+margin-bottom: 20px; 
+text-align: center;
+margin-top: 0; 
+}
+
+.textContainer p {
+color: var(--black);
+font-size: 18px;
+line-height: 1.6; 
+width: 90%;
+text-align: center; 
+
+}
+
+
+    
 
 
 /*estilo del carrusel*/
