@@ -93,11 +93,7 @@
     background-color: #ecc1c1;
     border-radius: 15px;
     margin-top: 5px;
-    padding: 0%;
-
-    background-image: url("#carrusel-fotos");
-    background-size: cover;
-    
+    padding: 0%;   
   }
   
 /* .section-carrusel h1 {
