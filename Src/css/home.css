@@ -72,3 +72,48 @@
 .option-container p{
     font-size: 22px;
 }
+
+
+
+/*estilo del carrusel*/
+#carrusel-fotos{
+   position: relative;
+   padding: 0% 0% 50% 0%;
+}
+
+#carousel-container {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+  }
+
+  /*estilo del logo principal*/
+.section-carrusel {
+    display: flex;
+    background-color: #ecc1c1;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding: 0%;
+
+    background-image: url("#carrusel-fotos");
+    background-size: cover;
+    
+  }
+  
+/* .section-carrusel h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 20px;
+    padding-top: 15px;
+  }
+
+ .section-carrusel h2 {
+    color: var(--black);
+    margin-bottom: 15px;
+    padding-left: 55px;
+  }
+ */
+
+
+ 
