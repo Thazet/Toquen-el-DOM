@@ -27,15 +27,18 @@
     border-radius: 50px;
     display: flex;
     justify-content: center;
-    border: 4px solid var(--pink);    
+    border: 4px solid var(--pink);
+    flex-wrap: wrap;
 }
 .dots{
+    position: absolute;
+    z-index: 1;
+    left: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: .5rem;
     margin-top: 2rem;
-    margin-left: 2rem;
 }
 .dots img:first-child{
     width: 35px;
@@ -46,7 +49,7 @@
 }
 
 .piano-wrapper{
-    width: 100%;
+   width: 100%;
 }
 .piano{
     text-align: center;
@@ -73,7 +76,7 @@
     background: var(--lightblue);
     box-shadow: 0px 5px 1px rgba(32, 32, 32, 0.2);
     margin: 0;
-    width: 55px;
+    width: 50px;
     height: 150px;
     border-radius: 10px;
     transition: background-color 0.05s ease, box-shadow 0.05s ease;
