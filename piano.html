@@ -4,40 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Src/css/base.css">
     <title>FemSonora</title>
 </head>
 <body>
     
     <header>
-        
         <nav class="navbar-container">
             <div class="container-left">
-                <img src="Assets/img/Logo-Final.svg" alt="logo">
-                <img src="Assets/img/linea-header.png" alt="musicwave">
+                <img class="logo"src="Assets/img/Logo-Final.svg" alt="logo">
+                <img src="Assets/img/linea-header.svg" alt="musicwave">
             </div>
             <div class="container-right">
-                <a class="button-home"></a>
-                <a class="button-aboutus"></a>
+                <a href="index.html" class="btn button-home">HOME</a>
+                <a href="aboutus.html" class="btn button-aboutus">ABOUT US</a>
             </div>
-
         </nav>
     </header>
 
     <main>
-        <section>
+        <div class="main-container-piano">
+        <section class="piano-instructions">
             <h2>Instrucciones para tocar el piano</h2>
             <p>Lorem ipsum dolor sit amet consectetur. Convallis in viverra enim malesuada arcu facilisis. Eget habitant facilisi nulla arcu in libero pretium. Lectus scelerisque nullam velit integer nulla faucibus nec. At duis ullamcorper amet dui leo mauris. Diam eget sem convallis ac. Ultrices commodo et accumsan eros nunc sit vitae sagittis. At in cursus ut arcu. Est sit placerat nunc duis in. Facilisis sapien eu imperdiet cursus ultricies.</p>
         </section>
-        <section id="piano">
-            <svg height="59" width="50">
-                <ellipse cx="25" cy="30" rx="25" ry="30"
-                style="fill:#FF7783" />
-              </svg>
-              <svg height="50" width="50">
-                <circle cx="50" cy="50" r="50"
-                style="fill:#FF7783" />
-              </svg>
-              <div class="piano-wrapper">
+        <section class="container-piano" id="piano">
+            <div class="dots">
+                <img src="Assets/img/Ellipse 7.svg" alt="">
+                <img src="Assets/img/Ellipse 7.svg" alt="">
+            </div>
+            <div class="piano-wrapper">
                 <ul class="piano">
                     <li class="key">
                         <span class="white-key" data-key="90" data-note="1c"><i>Do</i></span>
@@ -101,7 +97,9 @@
                     <li class="key">
                         <span class="white-key" data-key="66" data-note="3e"><i>Mi</i></span>
                     </li>
+                    </ul>
                     <!-- THE END OF FIRST LINE-->
+                    <ul class="piano">
                     <li class="key">
                         <span class="white-key" data-key="78" data-note="3f"><i>Fa</i></span>
                         <span class="black-key" data-key="74" data-note="3fis"><i>Fa♯ Sol♭</i></span>
@@ -169,63 +167,9 @@
                     <li class="key"><span class="white-key" data-key="82" data-note="6b"><i>Si</i></span></li>
                     <li class="key"><span class="white-key" data-key="82" data-note="6c"><i>Do</i></span></li>
                 </ul>
-              </div>
-        </section>
-        <section>
-            <div class="profile">
-                <a href=""><img src="Assets/img/perfil1.svg" alt=""></a>
-                <div class="rrss-icon">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-                <p>Nombre</p>
-            </div>
-
-            <div class="profile">
-                <a href=""><img src="Assets/img/perfil2.png" alt=""></a>
-                <div class="rrss-icon">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-                <p>Nombre</p>
-            </div>
-
-            <div class="profile">
-                <a href=""><img src="Assets/img/perfil3.png" alt=""></a>
-                <div class="rrss-icon">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-                <p>Nombre</p>
-            </div>
-
-            <div class="profile">
-                <a href=""><img src="Assets/img/perfil4.png" alt=""></a>
-                <div class="rrss-icon">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-                <p>Nombre</p>
-            </div>
-
-            <div class="profile">
-                <a href=""><img src="Assets/img/perfil5.png" alt=""></a>
-                <div class="rrss-icon">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-                <p>Nombre</p>
-            </div>
-
-            <div class="profile">
-                <a href=""><img src="Assets/img/perfil6.png" alt=""></a>
-                <div class="rrss-icon">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-                <p>Nombre</p>
             </div>
         </section>
+    </div>
     </main>
     
     <footer> 
