@@ -55,6 +55,9 @@ footer {
     margin-top: auto; 
     position: absolute;
     bottom: 0;
+   gap: 6%;
+
+    
 }
 
 .Address ,
@@ -67,7 +70,7 @@ footer {
 
    .Address i,
     .contact i {
-        color: var(--yellow); /* Asegúrate de usar var() para acceder a la variable */
+        color: var(--yellow);
         margin-right: 8px;
     }
     
