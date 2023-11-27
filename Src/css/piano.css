@@ -1,14 +1,12 @@
 
-.main-piano{
-   height:100vh;
-}
 .main-container-piano{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: ;
     align-content: center;
     align-items: center;
     width: 100%;
+    height:100vh;
 }
 .piano-instructions{
     display: flex;
