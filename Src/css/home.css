@@ -67,8 +67,11 @@
     align-items: center;
     padding: 3rem;
     gap: 1.5rem;
-}
 
+}
+.option-container img{
+    width: 100%;
+}
 .option-container p{
     font-size: 22px;
 }
