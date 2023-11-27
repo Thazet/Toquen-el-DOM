@@ -4,10 +4,11 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-top: 2rem;    
+    padding-top: 2rem;
+    gap: 2rem;    
 }
 
-.home-profiles h3{
+.home-profiles h3, .sec-intruments h3{
     color: var(--darkblue);
 }
 
@@ -33,8 +34,41 @@
 
 .rrss-icon{
     font-size: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 .profile p {
     font-size: 22px;
-    
+}
+
+.sec-intruments{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 0 6rem 0;
+    gap: 3rem;
+}
+
+.intru-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+.option-container{
+    background-color: var(--pink);
+    width: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 1.5rem;
+}
+
+.option-container p{
+    font-size: 22px;
 }
