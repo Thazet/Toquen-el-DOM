@@ -1,20 +1,16 @@
 function moverCarrusel() {
   const carouselContainer = document.querySelector("#carousel-container");
-  const numImagenes = carouselContainer.querySelectorAll("img").length;  // contamos con lenght la cantidad de imágenes del carrusel
+  const imagenes = carouselContainer.querySelectorAll("img");
+  const imagenActual = carouselContainer.querySelector("img.imagen-actual");
+  const siguienteImagen = imagenActual.nextElementSibling || imagenes[0];
+  carouselContainer.appendChild(imagenActual); 
 
-  
-  const imagenActual = carouselContainer.querySelector("img.imagen-actual"); // Obtenemos la imagen actual
-  const siguienteImagen = imagenActual.nextElementSibling; // Obtenemos la siguiente imagen
-
-  if (siguienteImagen) {
-    carouselContainer.insertBefore(siguienteImagen, imagenActual); // con una condicion modifico que si la siguiente imagen existe, la mueva al frente y asi una trs otra
-    imagenActual.classList.remove("imagen-actual");
-    siguienteImagen.classList.add("imagen-actual");
-  }
+  imagenActual.classList.remove("imagen-actual");
+  siguienteImagen.classList.add("imagen-actual");
 }
 
 function iniciarCarrusel() {
-  setInterval(moverCarrusel, 5000); //temporissador de 5s
+  setInterval(moverCarrusel, 5000);
 }
 
-
+document.addEventListener("DOMContentLoaded", iniciarCarrusel);
