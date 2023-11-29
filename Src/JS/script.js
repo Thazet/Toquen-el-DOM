@@ -14,3 +14,20 @@ function iniciarCarrusel() {
 }
 
 document.addEventListener("DOMContentLoaded", iniciarCarrusel);
+
+document.addEventListener("DOMContentLoaded", function () {
+  var keys = document.querySelectorAll('.key span');
+
+  keys.forEach(function (key) {
+      key.addEventListener('click', function () {
+          var soundFolder = '../Assets/keysound/'; 
+          var soundFile = soundFolder + key.getAttribute('data-sound');
+          playSound(soundFile);
+      });
+  });
+
+  function playSound(soundFile) {
+      var audio = new Audio(soundFile);
+      audio.play();
+  }
+});
