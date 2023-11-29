@@ -126,12 +126,12 @@ text-align: center;
 /*estilo del carrusel*/
 #carrusel-fotos{
    position: relative;
-   padding: 0% 0% 38% 0%;
+   
 }
 
 #carousel-container {
     display: flex;
-    position: absolute;
+    
     /*z-index: -1;*/
     overflow: hidden;
   }
