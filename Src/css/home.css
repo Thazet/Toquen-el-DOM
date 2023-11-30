@@ -6,12 +6,15 @@
     text-align: center;
     padding-top: 2rem;
     gap: 2rem; 
-    padding-bottom: 3rem;   
+    padding-bottom: 3rem;    
 }
 
 .home-profiles h3, .sec-intruments h3{
     color: var(--darkblue);
-}
+    font-size: 24px;
+    font-weight:Bold; 
+    text-shadow: 2px 2px 4px rgba(2, 2, 2, 0.238);
+} 
 
 .profile{
     display:flex;
@@ -26,7 +29,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100%; 
 }
 
 .profile a img{
@@ -113,6 +116,9 @@ font-size: 24px;
 margin-bottom: 20px; 
 text-align: center;
 margin-top: 0; 
+font-size: 24px;
+font-weight:Bold; 
+text-shadow: 2px 2px 4px rgba(2, 2, 2, 0.238);
 }
 
 .textContainer p {
