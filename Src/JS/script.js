@@ -10,7 +10,7 @@ function moverCarrusel() {
 }
 
 function iniciarCarrusel() {
-  setInterval(moverCarrusel, 5000);
+  setInterval(moverCarrusel, 1000);
 }
 
 document.addEventListener("DOMContentLoaded", iniciarCarrusel);

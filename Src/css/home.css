@@ -33,11 +33,19 @@
     width: 40%;
 }
 
-.rrss-icon{
-    font-size: 40px;
+.rrss-icon {
     display: flex;
+    flex-direction:row;
     justify-content: center;
     gap: 1rem;
+   
+    
+}
+.rrss-icon i {
+  
+    color: black;
+    font-size: 40px;
+ 
 }
 .profile p {
     font-size: 22px;
@@ -136,6 +144,8 @@ text-align: center;
     
     /*z-index: -1;*/
     overflow: hidden;
+    height: auto;
+    transition: transform 0.5s;
   }
 
   #carousel-container img {
