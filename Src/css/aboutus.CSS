@@ -35,8 +35,9 @@ H2 {
     margin: 5%
 }
 
+
 @media (max-width:786px) {
-    .abotus, .primeraFila, .profileAboutus, .rrss-icon, .SegundaFila, h2{
+    .abotus, .primeraFila,.rrss-icon, .SegundaFila, h2,.footer_index{
         width: 100%;
     }
     
