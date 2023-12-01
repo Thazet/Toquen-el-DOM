@@ -176,6 +176,19 @@ text-align: center;
     padding-left: 58px;
   }
 
+  @media (max-width: 768px) { 
+    .navbar-container{
+        width: 100%; 
+    }
+
+    #carrusel-fotos,#carousel-container{
+        width: 100%;
+
+    }
+
+    
+}
+  
 
 
  
