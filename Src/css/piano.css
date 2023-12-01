@@ -26,19 +26,37 @@
     background-color: #ff77829c;
     border-radius: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     border: 4px solid var(--pink);
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding: 2rem 1rem;
+    
 }
+
+.key .notes{
+    display: none;
+    color: var(--yellow);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.btnOptions button{
+    background-color: var(--pink);
+    border: none;
+    color: var(--white);
+    width: 70px;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
 .dots{
-    position: absolute;
     z-index: 1;
-    left: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: .5rem;
-    margin-top: 2rem;
 }
 .dots img:first-child{
     width: 35px;
@@ -94,7 +112,8 @@
     flex-direction: column;
 }
 
-.key span i{
+.key span .letters{
+    display: none;
     color: var(--white);
     font-size: 14px;
     font-style: normal;

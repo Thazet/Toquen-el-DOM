@@ -51,3 +51,26 @@ window.addEventListener('keyup', function(event) {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  var btnNotes = document.querySelectorAll('.btnNotes');
+  btnNotes.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var notes = document.querySelectorAll('.notes');
+      notes.forEach(function (note) {
+        note.style.display = "block";
+      });
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var btnLetters = document.querySelectorAll('.btnLetters');
+  btnLetters.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var letters = document.querySelectorAll('.letters');
+      letters.forEach(function (letter) {
+        letter.style.display = "block";
+      });
+    });
+  });
+});
