@@ -31,3 +31,19 @@ document.addEventListener("DOMContentLoaded", function () {
       audio.play();
   }
 });
+
+window.addEventListener('keydown', function(event) {
+  var key = document.querySelector('[data-key="' + event.key + '"]');
+  if (key) {
+    var soundFolder = '../Assets/keysound/'; 
+    var soundFile = soundFolder + key.getAttribute('data-sound');
+      playSound(soundFile);
+  }
+});
+
+function playSound(soundFile) {
+  var audio = new Audio(soundFile);
+  audio.play();
+}
+
+
