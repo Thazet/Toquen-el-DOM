@@ -35,3 +35,54 @@ H2 {
     margin: 5%
 }
 
+
+@media (max-width:786px) {
+    .abotus, .primeraFila, .profileAboutus, .rrss-icon, .SegundaFila, h2{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+/*@media screen and(max-width: 600px) {
+.aboutus {
+    width: 100%;
+
+    }
+.profileAboutus{
+    width: 100%;
+    margin:5%;
+
+    }
+.profileAboutus img{
+    width: 100%;
+    margin:5%;
+}
+.primeraFila, .SegundaFila{
+    justify-content: center;
+
+}
+.rrss-icon{
+    justify-content: center;
+    margin-top: 5%;
+}
+.rrss-icon i{
+    width: 100%;
+}
+.H2{
+    justify-content: center;
+    margin: 2%;
+}
+}
+.abotus {
+    display:flex;
+    flex-direction: column;
+}
+
+*/
