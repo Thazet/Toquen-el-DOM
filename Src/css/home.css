@@ -125,7 +125,7 @@ text-shadow: 2px 2px 4px rgba(2, 2, 2, 0.238);
 color: var(--black);
 font-size: 18px;
 line-height: 1.6; 
-width: 90%;
+width: 100%;
 text-align: center; 
 
 }
@@ -192,15 +192,49 @@ text-align: center;
 
 /*responsive para mobil*/
 @media only screen and (max-width: 768px) {
-   .navbar-container, .section-carrusel, .containerEscuela, .sec-intruments, .home-profiles{
+   .section-carrusel, .containerEscuela, .sec-intruments, .home-profiles,.footer_index{
         width: 100%;
         display: flex;
         flex-direction: column;
-        
+   }  
+   .navbar-container{
+    flex-direction: row;
+    gap:2rem;
    }
-   }
+   .container-right{
+    flex-direction: row;
+    width: 70%;
+    justify-content: center;
+    margin:auto;
 
-   .container-left img{
+   }
+   .container-left{
+    width: 30%;
+   }
+   .container-left img:nth-child(2){
+    display: none;
+    
+   }
+    .btn:first-child{
+        text-decoration: none;
+        background-color: var(--pink);
+        color: var(--white);
+        padding:.5rem 1rem; 
+        border-radius: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: small;
+    }
+    .btn:nth-child(2){
+        text-decoration: none;
+        background-color: var(--pink);
+        color: var(--white);
+        padding: .5rem 0.8rem; 
+        border-radius: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: small;
+    }
+
+    .container-left img{
         width: 50%;
    }
 
@@ -212,7 +246,6 @@ text-align: center;
    }
 
    .section-carrusel img {
-        height: 50PX;
         justify-content: left;
     }
     
@@ -255,7 +288,44 @@ text-align: center;
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-   
+        align-items:center;
+        gap: 0.5em;rem;
    }
+   .intru-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    
+   }
+   .option-container{
+    width: 50%;
+    
+   }
+   .textContainer p{
+    width: 100%;
+   }
+.section-carrusel{
+    flex-direction: row;
+}
+.textCarrusel{
+    display:flex;
+    flex-direction:column;
+    width: 60%;
+
+}
+.logoContainer{
+    width: 40%;
+}
+.textCarrusel h2{
+    padding: 0;
+}
+.logoContainer img{
+    width: 100%;
+   
+}
+.textCarrusel h1{
+    font-weight: 600;
+}
 }
