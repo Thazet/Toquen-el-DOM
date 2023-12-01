@@ -15,6 +15,7 @@ function iniciarCarrusel() {
 
 document.addEventListener("DOMContentLoaded", iniciarCarrusel);
 
+
 document.addEventListener("DOMContentLoaded", function () {
   var keys = document.querySelectorAll('.key span');
 
@@ -25,11 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
           playSound(soundFile);
       });
   });
-
-  function playSound(soundFile) {
-      var audio = new Audio(soundFile);
-      audio.play();
-  }
 });
 
 window.addEventListener('keydown', function(event) {
@@ -38,6 +34,7 @@ window.addEventListener('keydown', function(event) {
     var soundFolder = '../Assets/keysound/'; 
     var soundFile = soundFolder + key.getAttribute('data-sound');
       playSound(soundFile);
+      key.classList.add('pressed')
   }
 });
 
@@ -46,4 +43,11 @@ function playSound(soundFile) {
   audio.play();
 }
 
+
+window.addEventListener('keyup', function(event) {
+  var key = document.querySelector('[data-key="' + event.key + '"]');
+  if (key) {
+      key.classList.remove('pressed'); 
+  }
+});
 
