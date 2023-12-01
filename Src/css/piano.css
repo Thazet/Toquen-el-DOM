@@ -36,8 +36,8 @@
 .key .notes{
     display: none;
     color: var(--yellow);
-    font-weight: 600;
     font-style: normal;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .btnOptions button{

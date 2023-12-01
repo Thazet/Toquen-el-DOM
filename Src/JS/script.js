@@ -57,19 +57,26 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.addEventListener('click', function () {
       var notes = document.querySelectorAll('.notes');
       notes.forEach(function (note) {
-        note.style.display = "block";
+        if (note.style.display === "none" || note.style.display === "") {
+          note.style.display = "block";
+        } else {
+          note.style.display = "none";
+        }
       });
     });
   });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
+  
   var btnLetters = document.querySelectorAll('.btnLetters');
   btnLetters.forEach(function (btn) {
     btn.addEventListener('click', function () {
       var letters = document.querySelectorAll('.letters');
       letters.forEach(function (letter) {
-        letter.style.display = "block";
+        if (letter.style.display === "none" || letter.style.display === "") {
+          letter.style.display = "block";
+        } else {
+          letter.style.display = "none";
+        }
       });
     });
   });
