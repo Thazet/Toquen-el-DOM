@@ -14,3 +14,40 @@ function iniciarCarrusel() {
 }
 
 document.addEventListener("DOMContentLoaded", iniciarCarrusel);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var keys = document.querySelectorAll('.key span');
+
+  keys.forEach(function (key) {
+      key.addEventListener('click', function () {
+          var soundFolder = '../Assets/keysound/'; 
+          var soundFile = soundFolder + key.getAttribute('data-sound');
+          playSound(soundFile);
+      });
+  });
+});
+
+window.addEventListener('keydown', function(event) {
+  var key = document.querySelector('[data-key="' + event.key + '"]');
+  if (key) {
+    var soundFolder = '../Assets/keysound/'; 
+    var soundFile = soundFolder + key.getAttribute('data-sound');
+      playSound(soundFile);
+      key.classList.add('pressed')
+  }
+});
+
+function playSound(soundFile) {
+  var audio = new Audio(soundFile);
+  audio.play();
+}
+
+
+window.addEventListener('keyup', function(event) {
+  var key = document.querySelector('[data-key="' + event.key + '"]');
+  if (key) {
+      key.classList.remove('pressed'); 
+  }
+});
+
