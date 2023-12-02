@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Src/css/base.css">
     <title>FemSonora</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar-container">
             <div class="container-left">
-                <img class="logo"src="Assets/img/Logo-Final.svg" alt="logo">
+                <img class="logo" src="Assets/img/Logo-Final.svg" alt="logo">
                 <img src="Assets/img/linea-header.svg" alt="musicwave">
             </div>
             <div class="container-right">
@@ -20,164 +24,174 @@
             </div>
         </nav>
     </header>
-    
-    <main class="main-piano">
+
+
+    <div class="orientation-message-container">
         <p class="girar">Gira tu terminal para poder tocar el piano</p>
-        <a href="index.html" class="boton-regresar"><i class="fas fa-arrow-left"></i> Regresar</a>
+        <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Regresar a inicio </a>
+    </div>
+
+    <main class="main-piano">
+
         <div class="main-container-piano">
-        <section class="piano-instructions">
-            <h2>Instrucciones para tocar el piano</h2>
-            <p>Las teclas pueden ser tocadas haciendo click. 
-            Tambien puedes tocar con el teclado usando las teclas de las letras para las teclas azul cielo y los numeros para las teclas azul oscuro.
-            Como puedes observar, en cada tecla esta escrita su nota correspondiente.
-            </p>
-        </section>
-        <section class="container-piano" id="piano">
-            <div class="dots">
-                <img src="Assets/img/Ellipse 7.svg" alt="">
-                <img src="Assets/img/Ellipse 7.svg" alt="">
-            </div>
-            <div class="piano-wrapper">
-                <ul class="piano">
-                    <li class="key">
-                        <span class="white-key" data-key="90" data-note="1c"><i>Do</i></span>
-                        <span class="black-key" data-key="83" data-note="1cis"><i>Do# Re♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="88" data-note="1d"><i>Re</i></span>
-                        <span class="black-key" data-key="68" data-note="1dis"><i>Re♯ Mi♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="67" data-note="1e"><i>Mi</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="81" data-note="1f"><i>Fa</i></span>
-                        <span class="black-key" data-key="50" data-note="1fis"><i>Fa♯ Sol♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="87" data-note="1g"><i>Sol</i></span>
-                        <span class="black-key" data-key="51" data-note="1gis"><i>Sol♯ La♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="69" data-note="2a"><i>La</i></span>
-                        <span class="black-key" data-key="52" data-note="2ais"><i>La♯ Si♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="82" data-note="2b"><i>Si</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="84" data-note="2c"><i>Do</i></span>
-                        <span class="black-key" data-key="54" data-note="2cis"><i>Do# Re♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="89" data-note="2d"><i>Re</i></span>
-                        <span class="black-key" data-key="55" data-note="2dis"><i>Re♯ Mi♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="85" data-note="2e"><i>Mi</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="73" data-note="2f"><i>Fa</i></span>
-                        <span class="black-key" data-key="57" data-note="2fis"><i>Fa♯ Sol♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="79" data-note="2g"><i>Sol</i></span>
-                        <span class="black-key" data-key="48" data-note="2gis"><i>Sol♯ La♭</i></span></li>
-                    <li class="key">
-                        <span class="white-key" data-key="80" data-note="3a"><i>La</i></span>
-                        <span class="black-key" data-key="187" data-note="3ais"><i>La♯ Si♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="219" data-note="3b"><i>Si</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="221" data-note="3c"><i>Do</i></span>
-                        <span class="black-key" data-key="70" data-note="3cis"><i>Do# Re♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="86" data-note="3d"><i>Re</i></span>
-                        <span class="black-key" data-key="71" data-note="3dis"><i>Re♯ Mi♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="66" data-note="3e"><i>Mi</i></span>
-                    </li>
+            <section class="piano-instructions">
+                <h2>Instrucciones para tocar el piano</h2>
+                <p>Las teclas pueden ser tocadas haciendo click.
+                    Tambien puedes tocar con el teclado usando las teclas de las letras para las teclas azul cielo y los
+                    numeros para las teclas azul oscuro.
+                    Como puedes observar, en cada tecla esta escrita su nota correspondiente.
+                </p>
+            </section>
+            <section class="container-piano" id="piano">
+                <div class="dots">
+                    <img src="Assets/img/Ellipse 7.svg" alt="">
+                    <img src="Assets/img/Ellipse 7.svg" alt="">
+                </div>
+                <div class="piano-wrapper">
+                    <ul class="piano">
+                        <li class="key">
+                            <span class="white-key" data-key="90" data-note="1c"><i>Do</i></span>
+                            <span class="black-key" data-key="83" data-note="1cis"><i>Do# Re♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="88" data-note="1d"><i>Re</i></span>
+                            <span class="black-key" data-key="68" data-note="1dis"><i>Re♯ Mi♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="67" data-note="1e"><i>Mi</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="81" data-note="1f"><i>Fa</i></span>
+                            <span class="black-key" data-key="50" data-note="1fis"><i>Fa♯ Sol♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="87" data-note="1g"><i>Sol</i></span>
+                            <span class="black-key" data-key="51" data-note="1gis"><i>Sol♯ La♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="69" data-note="2a"><i>La</i></span>
+                            <span class="black-key" data-key="52" data-note="2ais"><i>La♯ Si♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="82" data-note="2b"><i>Si</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="84" data-note="2c"><i>Do</i></span>
+                            <span class="black-key" data-key="54" data-note="2cis"><i>Do# Re♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="89" data-note="2d"><i>Re</i></span>
+                            <span class="black-key" data-key="55" data-note="2dis"><i>Re♯ Mi♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="85" data-note="2e"><i>Mi</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="73" data-note="2f"><i>Fa</i></span>
+                            <span class="black-key" data-key="57" data-note="2fis"><i>Fa♯ Sol♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="79" data-note="2g"><i>Sol</i></span>
+                            <span class="black-key" data-key="48" data-note="2gis"><i>Sol♯ La♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="80" data-note="3a"><i>La</i></span>
+                            <span class="black-key" data-key="187" data-note="3ais"><i>La♯ Si♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="219" data-note="3b"><i>Si</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="221" data-note="3c"><i>Do</i></span>
+                            <span class="black-key" data-key="70" data-note="3cis"><i>Do# Re♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="86" data-note="3d"><i>Re</i></span>
+                            <span class="black-key" data-key="71" data-note="3dis"><i>Re♯ Mi♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="66" data-note="3e"><i>Mi</i></span>
+                        </li>
                     </ul>
                     <!-- THE END OF FIRST LINE-->
                     <ul class="piano">
-                    <li class="key">
-                        <span class="white-key" data-key="78" data-note="3f"><i>Fa</i></span>
-                        <span class="black-key" data-key="74" data-note="3fis"><i>Fa♯ Sol♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="77" data-note="3g"><i>Sol</i></span>
-                        <span class="black-key" data-key="75" data-note="3gis"><i>Sol♯ La♭</i></span></li>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="188" data-note="4a"><i>La</i></span>
-                        <span class="black-key" data-key="76" data-note="4ais"><i>La♯ Si♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="190" data-note="4b"><i>Si</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="84" data-note="4c"><i>Do</i></span>
-                        <span class="black-key" data-key="54" data-note="4cis"><i>Do# Re♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="88" data-note="4d"><i>Re</i></span>
-                        <span class="black-key" data-key="68" data-note="4dis"><i>Re♯ Mi♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="67" data-note="4e"><i>Mi</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="81" data-note="4f"><i>Fa</i></span>
-                        <span class="black-key" data-key="50" data-note="4fis"><i>Fa♯ Sol♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="87" data-note="4g"><i>Sol</i></span>
-                        <span class="black-key" data-key="51" data-note="4gis"><i>Sol♯ La♭</i></span></li>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="69" data-note="5a"><i>La</i></span>
-                        <span class="black-key" data-key="52" data-note="5ais"><i>La♯ Si♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="82" data-note="5b"><i>Si</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="84" data-note="5c"><i>Do</i></span>
-                        <span class="black-key" data-key="54" data-note="5cis"><i>Do# Re♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="88" data-note="5d"><i>Re</i></span>
-                        <span class="black-key" data-key="68" data-note="5dis"><i>Re♯ Mi♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="67" data-note="5e"><i>Mi</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="81" data-note="5f"><i>Fa</i></span>
-                        <span class="black-key" data-key="50" data-note="5fis"><i>Fa♯ Sol♭</i></span>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="87" data-note="5g"><i>Sol</i></span>
-                        <span class="black-key" data-key="51" data-note="5gis"><i>Sol♯ La♭</i></span></li>
-                    </li>
-                    <li class="key">
-                        <span class="white-key" data-key="69" data-note="6a"><i>La</i></span>
-                        <span class="black-key" data-key="52" data-note="6ais"><i>La♯ Si♭</i></span>
-                    </li>
-                    <li class="key"><span class="white-key" data-key="82" data-note="6b"><i>Si</i></span></li>
-                    <li class="key"><span class="white-key" data-key="82" data-note="6c"><i>Do</i></span></li>
-                </ul>
-                <p>FEMSONORA</p>
-            </div>
-        </section>
-    </div>
+                        <li class="key">
+                            <span class="white-key" data-key="78" data-note="3f"><i>Fa</i></span>
+                            <span class="black-key" data-key="74" data-note="3fis"><i>Fa♯ Sol♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="77" data-note="3g"><i>Sol</i></span>
+                            <span class="black-key" data-key="75" data-note="3gis"><i>Sol♯ La♭</i></span>
+                        </li>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="188" data-note="4a"><i>La</i></span>
+                            <span class="black-key" data-key="76" data-note="4ais"><i>La♯ Si♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="190" data-note="4b"><i>Si</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="84" data-note="4c"><i>Do</i></span>
+                            <span class="black-key" data-key="54" data-note="4cis"><i>Do# Re♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="88" data-note="4d"><i>Re</i></span>
+                            <span class="black-key" data-key="68" data-note="4dis"><i>Re♯ Mi♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="67" data-note="4e"><i>Mi</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="81" data-note="4f"><i>Fa</i></span>
+                            <span class="black-key" data-key="50" data-note="4fis"><i>Fa♯ Sol♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="87" data-note="4g"><i>Sol</i></span>
+                            <span class="black-key" data-key="51" data-note="4gis"><i>Sol♯ La♭</i></span>
+                        </li>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="69" data-note="5a"><i>La</i></span>
+                            <span class="black-key" data-key="52" data-note="5ais"><i>La♯ Si♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="82" data-note="5b"><i>Si</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="84" data-note="5c"><i>Do</i></span>
+                            <span class="black-key" data-key="54" data-note="5cis"><i>Do# Re♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="88" data-note="5d"><i>Re</i></span>
+                            <span class="black-key" data-key="68" data-note="5dis"><i>Re♯ Mi♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="67" data-note="5e"><i>Mi</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="81" data-note="5f"><i>Fa</i></span>
+                            <span class="black-key" data-key="50" data-note="5fis"><i>Fa♯ Sol♭</i></span>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="87" data-note="5g"><i>Sol</i></span>
+                            <span class="black-key" data-key="51" data-note="5gis"><i>Sol♯ La♭</i></span>
+                        </li>
+                        </li>
+                        <li class="key">
+                            <span class="white-key" data-key="69" data-note="6a"><i>La</i></span>
+                            <span class="black-key" data-key="52" data-note="6ais"><i>La♯ Si♭</i></span>
+                        </li>
+                        <li class="key"><span class="white-key" data-key="82" data-note="6b"><i>Si</i></span></li>
+                        <li class="key"><span class="white-key" data-key="82" data-note="6c"><i>Do</i></span></li>
+                    </ul>
+                    <p>FEMSONORA</p>
+                </div>
+            </section>
+        </div>
     </main>
-    
-    <footer> 
+
+    <footer>
         <div class="Address">
             <i class="fa-solid fa-location-dot"></i>
             <p>Calle Cielo, Nube 2a 00000 Arcoiris</p>
@@ -188,4 +202,5 @@
         </div>
     </footer>
 </body>
+
 </html>

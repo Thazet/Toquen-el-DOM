@@ -136,33 +136,34 @@
     margin-right: 2rem;
 }
 
+.girar {
+    display: none;
+ }
+ .back-button{display: none;}
 
 @media screen and (orientation: portrait) {
-    .main-container-piano {
+    .main-piano {
         display: none;
-
     }
-    .girar{
-        
-        Font-size: 40px;
+    
+    .girar {
+        font-size: 40px; 
+         
         display: flex;
         align-items: center;
+        text-align: center;
         justify-content: center;
         height: 70vh;
         color: var(--pink);
-   
-        
-    
     }
 }
-@media only screen and (max-height: 720px) {
 
+@media only screen and (max-height: 720px) {
     footer,
     header,
     .piano-instructions {
         display: none;
     }
-
 
     .main-container-piano {
         margin-top: 2%;
@@ -183,20 +184,30 @@
 
     .key span i {
         font-size: 10px;
-
     }
 
     .dots {
         margin-left: -80px;
     }
    
-    
     .piano {
         width: 100%;
         height: 180px;
         gap: 5px;
     }
-    .girar{
-        display: none;
+    a.back-button{
+        font-size: 6vh;
+        color: black;
     }
+    .back-button {
+        /* Estilos generales para todos los enlaces con la clase back-button */
+        display: inline-block;
+       
+        color: #fff; /* Cambia esto al color de texto deseado */
+        text-decoration: none;
+        border-radius: 5px;
+        /* Otros estilos que desees aplicar */
+    }
+    
 }
+
