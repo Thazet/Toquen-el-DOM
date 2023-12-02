@@ -202,11 +202,7 @@ text-align: center;
 
 /*responsive para mobil*/
 @media only screen and (max-width: 768px) {
-<<<<<<< HEAD
-   .section-carrusel, .containerEscuela, .sec-intruments, .home-profiles,.footer_index{
-=======
    .section-carousel, .container-school, .sec-intruments, .home-profiles,.footer_index{
->>>>>>> pianoRespo
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -259,11 +255,7 @@ text-align: center;
         padding: 3px 0px 0px 30px;
    }
 
-<<<<<<< HEAD
-   .section-carrusel img {
-=======
    .section-carousel img {
->>>>>>> pianoRespo
         justify-content: left;
     }
     
@@ -324,35 +316,15 @@ text-align: center;
    .textContainer p{
     width: 100%;
    }
-<<<<<<< HEAD
-.section-carrusel{
-    flex-direction: row;
-}
-.textCarrusel{
-=======
 .section-carousel{
     flex-direction: row;
 }
 .text-carousel{
->>>>>>> pianoRespo
     display:flex;
     flex-direction:column;
     width: 60%;
 
 }
-<<<<<<< HEAD
-.logoContainer{
-    width: 40%;
-}
-.textCarrusel h2{
-    padding: 0;
-}
-.logoContainer img{
-    width: 100%;
-   
-}
-.textCarrusel h1{
-=======
 .logo-container{
     width: 40%;
 }
@@ -364,7 +336,6 @@ text-align: center;
    
 }
 .text-carousel h1{
->>>>>>> pianoRespo
     font-weight: 600;
 }
 }
