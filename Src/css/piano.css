@@ -1,13 +1,13 @@
-
-.main-container-piano{
+.main-container-piano {
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
     width: 100%;
-    height:100vh;
+    height: 100vh;
 }
-.piano-instructions{
+
+.piano-instructions {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -17,11 +17,12 @@
     padding: 2rem;
     gap: 2rem;
 }
-.piano-instructions h2{
+
+.piano-instructions h2 {
     color: var(--pink);
 }
 
-.container-piano{
+.container-piano {
     width: 90%;
     background-color: #ff77829c;
     border-radius: 50px;
@@ -30,7 +31,8 @@
     border: 4px solid var(--pink);
     flex-wrap: wrap;
 }
-.dots{
+
+.dots {
     position: absolute;
     z-index: 1;
     left: 8rem;
@@ -40,25 +42,27 @@
     gap: .5rem;
     margin-top: 2rem;
 }
-.dots img:first-child{
+
+.dots img:first-child {
     width: 35px;
 }
 
-.dots img:nth-child(2){
+.dots img:nth-child(2) {
     width: 20px;
 }
 
-.piano-wrapper{
-   width: 100%;
+.piano-wrapper {
+    width: 100%;
 }
-.piano{
+
+.piano {
     text-align: center;
     margin: auto;
     display: flex;
     width: 100%;
     /* overflow: hidden; */
     flex-wrap: nowrap;
-    height: 200px; 
+    height: 200px;
     align-items: center;
     justify-content: center;
     gap: .3rem;
@@ -82,19 +86,18 @@
 }
 
 .key .white-key:active {
-    background: var(--pink); 
-    box-shadow: 0px 0px 0px rgba(32, 32, 32, 0.2); 
+    background: var(--pink);
+    box-shadow: 0px 0px 0px rgba(32, 32, 32, 0.2);
 }
 
-
-.key > span {
+.key>span {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
 }
 
-.key span i{
+.key span i {
     color: var(--white);
     font-size: 14px;
     font-style: normal;
@@ -119,20 +122,90 @@
 }
 
 .key .black-key:active {
-    background: var(--pink); 
-    box-shadow: 0px 0px 0px rgba(32, 32, 32, 0.2); 
+    background: var(--yellow);
+    box-shadow: 0px 0px 0px rgba(32, 32, 32, 0.2);
 }
 
-.key .pressed{
-    background: var(--pink); 
-    box-shadow: 0px 0px 0px rgba(32, 32, 32, 0.2); 
-}
-
-.piano-wrapper p{
+.piano-wrapper p {
     color: var(--pink);
     text-align: end;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     margin-right: 2rem;
+}
+
+.girar {
+    display: none;
+ }
+ .back-button{display: none;}
+
+@media screen and (orientation: portrait) {
+    .main-piano {
+        display: none;
+    }
+    
+    .girar {
+        font-size: 40px; 
+         
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 70vh;
+        color: var(--pink);
+    }
+}
+
+@media only screen and (max-height: 720px) {
+    footer,
+    header,
+    .piano-instructions {
+        display: none;
+    }
+
+    .main-container-piano {
+        margin-top: 2%;
+        align-content: center;
+        width: 95%;
+        height: 30%;
+    }
+
+    .key .black-key {
+        width: 8vh;
+        height: 15vh;
+    }
+
+    .key .white-key {
+        width: 8vh;
+        height: 29vh;
+    }
+
+    .key span i {
+        font-size: 10px;
+    }
+
+    .dots {
+        margin-left: -80px;
+    }
+   
+    .piano {
+        width: 100%;
+        height: 180px;
+        gap: 5px;
+    }
+    a.back-button{
+        font-size: 6vh;
+        color: black;
+    }
+    .back-button {
+        /* Estilos generales para todos los enlaces con la clase back-button */
+        display: inline-block;
+       
+        color: #fff; /* Cambia esto al color de texto deseado */
+        text-decoration: none;
+        border-radius: 5px;
+        /* Otros estilos que desees aplicar */
+    }
+    
 }
 

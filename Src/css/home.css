@@ -92,7 +92,7 @@
 
     
 
-.containerEscuela {
+.container-school {
 display: flex;
 justify-content: center;
 align-items: center;
@@ -101,7 +101,7 @@ gap: 2rem;
 background-color:lightblue
 }
 
-.imageContainer {
+.image-container {
 flex: 1;
 max-width: 100%;
 height: auto;
@@ -109,7 +109,7 @@ display: block;
 margin-left: 20px;
 }git
 
-.textContainer {
+.text-container {
  display: flex; 
  flex-direction: column;
  justify-content: center;
@@ -118,7 +118,7 @@ margin-left: 20px;
  padding: 0 20px; 
 }
 
-.textContainer h3 {
+.text-container h3 {
 color: var(--darkblue);
 font-size: 24px;
 margin-bottom: 20px; 
@@ -129,7 +129,7 @@ font-weight:Bold;
 text-shadow: 2px 2px 4px rgba(2, 2, 2, 0.238);
 }
 
-.textContainer p {
+.text-container p {
 color: var(--black);
 font-size: 18px;
 line-height: 1.6; 
@@ -140,7 +140,7 @@ text-align: center;
 
 
 /*estilo del carrusel*/
-#carrusel-fotos{
+#carousel-photos{
    position: relative;
    
 }
@@ -161,7 +161,7 @@ text-align: center;
   }
 
   /*estilo del logo principal*/
-.section-carrusel {
+.section-carousel {
     position: absolute;
     display: flex;
     background-color: #fcf9f9d2;
@@ -172,7 +172,7 @@ text-align: center;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.153);
   }
   
-.section-carrusel h1 {
+.section-carousel h1 {
     font-size: 3em;
     font-weight: bold;
     color: var(--black);
@@ -180,7 +180,7 @@ text-align: center;
     padding-top: 15px;
   }
 
- .section-carrusel h2 {
+ .section-carousel h2 {
     color: var(--black);
     margin-bottom: 25px;
     padding-left: 58px;
@@ -202,7 +202,11 @@ text-align: center;
 
 /*responsive para mobil*/
 @media only screen and (max-width: 768px) {
+<<<<<<< HEAD
    .section-carrusel, .containerEscuela, .sec-intruments, .home-profiles,.footer_index{
+=======
+   .section-carousel, .container-school, .sec-intruments, .home-profiles,.footer_index{
+>>>>>>> pianoRespo
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -249,28 +253,32 @@ text-align: center;
    }
 
 
-   .section-carrusel{
+   .section-carousel{
         margin: 0px 0px 0px 0px;
         display: flex;
         padding: 3px 0px 0px 30px;
    }
 
+<<<<<<< HEAD
    .section-carrusel img {
+=======
+   .section-carousel img {
+>>>>>>> pianoRespo
         justify-content: left;
     }
     
-    .section-carrusel h1{
+    .section-carousel h1{
         justify-content: right;
         font-size: 1rem;
     }
 
-    .section-carrusel h2{
+    .section-carousel h2{
         justify-content: right;
         font-size: 1rem;
     }
 
 
-   .imageContainer img{
+   .image-container img{
         width: 100%;
    }
    
@@ -316,15 +324,23 @@ text-align: center;
    .textContainer p{
     width: 100%;
    }
+<<<<<<< HEAD
 .section-carrusel{
     flex-direction: row;
 }
 .textCarrusel{
+=======
+.section-carousel{
+    flex-direction: row;
+}
+.text-carousel{
+>>>>>>> pianoRespo
     display:flex;
     flex-direction:column;
     width: 60%;
 
 }
+<<<<<<< HEAD
 .logoContainer{
     width: 40%;
 }
@@ -336,6 +352,19 @@ text-align: center;
    
 }
 .textCarrusel h1{
+=======
+.logo-container{
+    width: 40%;
+}
+.text-carousel h2{
+    padding: 0;
+}
+.logo-container img{
+    width: 100%;
+   
+}
+.text-carousel h1{
+>>>>>>> pianoRespo
     font-weight: 600;
 }
 }
