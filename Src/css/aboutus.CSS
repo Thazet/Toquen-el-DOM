@@ -1,23 +1,27 @@
 .abotus{
-    margin-bottom: 4%;
+
+    margin-bottom: 3%;
+    margin-top: 3%;
     max-width: 100%;
+    
 
 }
-.profileAboutus {
+.profile-aboutus {
     width: 20%;
     margin: 10px;
     padding: 15px;
     text-align: center;
 }
 
-.profileAboutus img {
+.profile-aboutus  img {
     max-width:60%;
 }
 
-.primeraFila, .SegundaFila {
+.first-row, .second-row {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 1%;
 }
 
 .rrss-icon{
@@ -37,7 +41,7 @@ H2 {
 
 
 @media (max-width:786px) {
-    .abotus, .primeraFila, .profileAboutus, .rrss-icon, .SegundaFila, h2{
+    .abotus, .primeraFila, .profile-aboutus, .rrss-icon, .SegundaFila, h2{
         width: 100%;
     }
     

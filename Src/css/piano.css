@@ -137,15 +137,25 @@
 }
 
 
-@media only screen and (min-width: 412px) and (max-width: 905px) {
-    footer,
-    header,
-    .main-piano {
+@media screen and (orientation: portrait) {
+    .main-container-piano {
         display: none;
-    }
 
-} 
-@media only screen and (max-height: 500px) {
+    }
+    .girar{
+        
+        Font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        color: var(--pink);
+   
+        
+    
+    }
+}
+@media only screen and (max-height: 720px) {
 
     footer,
     header,
@@ -155,11 +165,10 @@
 
 
     .main-container-piano {
-        display: flex;
-        flex-direction:column;
+        margin-top: 2%;
         align-content: center;
-        align-items: center;
-        width: 90%;
+        width: 95%;
+        height: 30%;
     }
 
     .key .black-key {
@@ -190,3 +199,4 @@
     .girar{
         display: none;
     }
+}
