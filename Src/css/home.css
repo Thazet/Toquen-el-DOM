@@ -312,17 +312,19 @@ text-align: center;
 .textCarrusel{
     display:flex;
     flex-direction:column;
-    width: 60%;
+    width: 40%;
 
 }
 .logoContainer{
     width: 40%;
+  
 }
 .textCarrusel h2{
     padding: 0;
 }
 .logoContainer img{
     width: 100%;
+   
    
 }
 .textCarrusel h1{
