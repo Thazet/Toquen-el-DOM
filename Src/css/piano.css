@@ -177,7 +177,7 @@
     }
 }
 
-@media only screen and (max-height: 720px) {
+@media only screen and (max-height: 600px) {
     footer,
     header,
     .piano-instructions {
