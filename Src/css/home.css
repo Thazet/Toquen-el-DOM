@@ -143,13 +143,15 @@ text-align: center;
 /*estilo del carrusel*/
 #carousel-photos{
    position: relative;
+   display: flex;
+   justify-content: center;
    
 }
 
 #carousel-container {
     display: flex;
-    
-    /*z-index: -1;*/
+    position: block;
+    z-index: -1;
     overflow: hidden;
     height: auto;
     transition: transform 0.5s;
@@ -165,11 +167,12 @@ text-align: center;
 .section-carousel {
     position: absolute;
     display: flex;
+    align-self: center;
+    align-items: center;
     background-color: #fcf9f9d2;
     border-radius: 15px;
-    padding: 5% 10% 5% 5%;  
-    top:10rem; 
-    margin: 0% 0% 0% 15%;
+    padding: 4rem 7rem;  
+    margin: auto;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.153);
   }
   
