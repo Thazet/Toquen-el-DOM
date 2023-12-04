@@ -36,9 +36,11 @@
 
 .key .notes{
     display: none;
-    color: var(--yellow);
+    color: black;
     font-style: normal;
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .btnOptions button{
@@ -139,7 +141,7 @@
 }
 
 .key .black-key:active {
-    background: var(--yellow);
+    background: var(--pink);
     box-shadow: 0px 0px 0px rgba(32, 32, 32, 0.2);
 }
 .key .pressed{
