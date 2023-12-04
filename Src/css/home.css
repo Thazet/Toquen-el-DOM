@@ -188,23 +188,12 @@ text-align: center;
     justify-content: center;
   }
 
-  @media (max-width: 768px) { 
-    .navbar-container{
-        width: 100%; 
-    }
-
-    #carrusel-fotos,#carousel-container{
-        width: 100%;
-
-    }
-
-    
-}
+ 
   
 
 /*responsive para mobil*/
 @media only screen and (max-width: 768px) {
-    .section-carrusel,.containerEscuela, .sec-intruments, .home-profiles,.footer_index{
+    .section-carousel,.container-school, .sec-intruments, .home-profiles,.footer_index{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -212,6 +201,7 @@ text-align: center;
    .navbar-container{
     flex-direction: row;
     gap:2rem;
+    width: 100%;
    }
    .container-right{
     flex-direction: row;
