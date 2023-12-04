@@ -214,6 +214,7 @@
         justify-content: center;
         width: 7vh;
         height: 15vh;
+        font-size: 20px;
     }
 
     .key .white-key {
@@ -232,7 +233,6 @@
         height: 130px;
         gap: 5px;
     }
-
     a.back-button {
         font-size: 4vh;
         background-color: var(--darkblue);
@@ -242,9 +242,8 @@
         padding: 1vh;
         border-radius: 5%;
     }
-
-
     .key .notes {
         display: block;
+        font-size: 10px;
     }
 }

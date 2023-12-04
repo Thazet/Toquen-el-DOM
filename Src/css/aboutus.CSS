@@ -39,7 +39,6 @@ H2 {
     margin: 5%
 }
 
-
 @media (max-width:786px) {
     .abotus, .primeraFila, .profile-aboutus, .rrss-icon, .SegundaFila, h2{
         width: 100%;
