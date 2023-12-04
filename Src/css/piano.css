@@ -74,7 +74,6 @@
     margin: auto;
     display: flex;
     width: 100%;
-    /* overflow: hidden; */
     flex-wrap: nowrap;
     height: 200px; 
     align-items: center;
