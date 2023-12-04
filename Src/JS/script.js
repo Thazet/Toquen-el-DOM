@@ -1,4 +1,4 @@
-function moverCarrusel() {
+export function moverCarrusel() {
   const carouselContainer = document.querySelector("#carousel-container");
   const imagenes = carouselContainer.querySelectorAll("img");
   const imagenActual = carouselContainer.querySelector("img.imagen-actual");
@@ -13,10 +13,10 @@ function iniciarCarrusel() {
   setInterval(moverCarrusel, 1000);
 }
 
-document.addEventListener("DOMContentLoaded", iniciarCarrusel);
+/*document.addEventListener("DOMContentLoaded", iniciarCarrusel);*/
 
 
-document.addEventListener("DOMContentLoaded", function () {
+
   var keys = document.querySelectorAll('.key span');
 
   keys.forEach(function (key) {
@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
           playSound(soundFile);
       });
   });
-});
 
 window.addEventListener('keydown', function(event) {
   var key = document.querySelector('[data-key="' + event.key + '"]');
@@ -51,7 +50,7 @@ window.addEventListener('keyup', function(event) {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+
   var btnNotes = document.querySelectorAll('.btnNotes');
   btnNotes.forEach(function (btn) {
     btn.addEventListener('click', function () {
@@ -64,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     });
-  });
+
 
   
   var btnLetters = document.querySelectorAll('.btnLetters');

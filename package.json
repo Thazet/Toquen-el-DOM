@@ -1,0 +1,14 @@
+{
+  "name": "femsonora",
+  "version": "1.0.0",
+  "description": "FemSonora es un proyecto desarrollado para una nueva escuela de música en línea, en cuyo sitio es posible tocar un instrumento interactivo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^0.34.6"
+  }
+}
